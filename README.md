@@ -8,77 +8,53 @@ Telegram Voice Chat Bot (Channel &amp; Radio) Support
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yeagerist-Music-Streamer-Bot-V3/VCMusicPlayerVr4.0)
 
-# Configs Vars:
-1. `API_ID` : Get From [my.telegram.org](https://my.telegram.org) or [@UseTGzKBot](https://telegram.dog/UseTGzKBot).
-2. `API_HASH` : Get from [my.telegram.org](https://my.telegram.org) or [@UseTGzKBot](https://telegram.dog/UseTGzKBot).
-3. `BOT_TOKEN` : [@Botfather](https://t.me/BotFather).
-4. `SESSION_STRING` : Generate From here [![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-yellowgreen)](https://replit.com/@ZauteKm/GenerateStringSession)
-5. `CHAT` : ID of Channel/Group where the bot plays Music. Channel ID Get From [@UseTGidBot](https://t.me/UseTGidBot).
+### Deploy to VPS
+
+```sh
+git clone https://github.com/Yeagerist-Music-Streamer-Bot-V3/VCMusicPlayerVr4.0
+cd MusicPlayer
+pip3 install -r requirements.txt
+# <Create Variables appropriately>
+python3 main.py
+```
+
+# Vars:
+1. `API_ID` : Get From my.telegram.org
+2. `API_HASH` : Get from my.telegram.org
+3. `BOT_TOKEN` : @Botfather
+4. `SESSION_STRING` : Generate From here [![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-yellowgreen)](https://repl.it/@subinps/getStringName)
+5. `CHAT` : ID of Channel/Group where the bot plays Music.
 6. `LOG_GROUP` : Group to send Playlist, if CHAT is a Group
 7. `ADMINS` : ID of users who can use admin commands.
-8. `STREAM_URL` : Stream URL of radio station to stream when the bot starts or with /radio command.
+8. `ARQ_API` : Get it for free from [@ARQRobot](https://telegram.dog/ARQRobot), This is required for /dplay to work.
+8. `STREAM_URL` : Stream URL of radio station or a youtube live video to stream when the bot starts or with /radio command.
 
-- Enable the worker after deploy the project to Heroku.
-- Bot will starts radio automatically in given `CHAT` with given `STREAM_URL` after deploy. 
-- 24x7 Music even if heroku restarts, radio stream restarts automatically.  
-- To play a song just send the audio file to Bot or reply to an audio with `/play` to start playing it in the voice chat.
-- Use `/help` to know about other commands & its usage.
+- Enable the worker after deploy the project to Heroku
+- Bot will starts radio automatically in given `CHAT` with given `STREAM_URL` after deploy.(24*7 Music even if heroku restarts, radio stream restarts automatically.)  
+- To play a song use /play as a reply to audio file or a youtube link.
+- Use /play <song name> to play song from youtube and /dplay <song name> to play from Deezer.
+- Use /help to know about other commands.
 
 **Features**
 
-- Playlist, queue, 24x7 radio stream.
-- Loop one track when there is only one track in the playlist.
-- Automatically downloads audio for the first two tracks in the playlist to ensure smooth playing.
-- Show current playing position of the audio
-- Control with buttons and commands.
-- Download songs from YouTube as audio.
+- Playlist, queue
+- Supports Live streaming from youtube
+- Supports both deezer and youtube to search songs.
+- Play from telegram file supported.
+- Starts Radio after if no songs in playlist.
+- Automatically downloads audio for the first two tracks in the playlist to ensure smooth playing
+- Automatic restart even if heroku restarts.
 
-## Requirements
+### Note
 
-- Python 3.6 or higher.
-- A
-  [Telegram API key](https://docs.pyrogram.org/intro/quickstart#enjoy-the-api)
-  and a Telegram account.
-- [FFmpeg Python](https://www.ffmpeg.org/)
-- Telegram [String Session](http://t.me/UsePyrogramBot) of the account.
-- Userbot Needs To Be Admin In The Channel or Group.
-- Must Start A Voice Chat In Channel/Group Before Running The Bot.
-
-## Run On VPS (The Hard Way)
-
-```sh
-$ git clone https://github.com/Yeagerist-Music-Streamer-Bot-V3/VCMusicPlayerVr4.0
-$ cd VCMusicPlayer
-$ sudo apt-get install ffmpeg
-$ pip3 install -U pip
-$ pip3 install -U -r requirements.txt
 ```
-Edit **config.py** with your own values.
+Contributions are welcomed, But Kanging and editing a few lines wont make you a Developer.
+Fork the repo, Do not Import code.
 
-```sh
-$ python3 main.py
 ```
-## License
-```sh
-VC Music Player, Telegram Voice Chat Userbot
-Copyright (C) 2021 Achu biju
+#### Support
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+Connect Me On [Telegram](https://t.me/Yeageristbotsdev)
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-```
-
-## Credits
-
-- [Achu biju](https://t.me/Yeageristbotsdev) [Dev]
-- [Dash Eclipse](https://github.com/dashezup) [For tgvc_userbot]
-- [Marshal X]  [For pytgcalls]
+## Credits 
+- [Dash Eclipse's](https://github.com/dashezup) for his[tgvc-userbot](https://github.com/callsmusic/tgvc-userbot).
