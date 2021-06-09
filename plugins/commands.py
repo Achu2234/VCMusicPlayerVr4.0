@@ -1,22 +1,3 @@
-"""
-VC Music Player, Telegram Voice Chat Userbot
-Copyright (C) 2021  Zaute Km | TGVCSETS
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
-
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>
-"""
-
-
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import Client, filters
 
@@ -24,7 +5,7 @@ from pyrogram import Client, filters
 
 HOME_TEXT = "👋🏻 **Hi [{}](tg://user?id={})**,\n\nI'm **Voice Chat Music/Radio Player Bot** \nI Can Play Radio/Stream Music In Channels & Groups 24x7 Nonstop."
 HELP = """🏷️ **Need Help?** 🤔
-Please Subscribe ❤️ @ZauteKm.
+Please Subscribe ❤️ @Animemusicarchive6.
 
 🏷️ **Common Commands**:
 \u2022 `/play` reply to an audio to play or queue it
@@ -55,12 +36,12 @@ Please Subscribe ❤️ @ZauteKm.
 async def start(client, message):
     buttons = [
         [
-        InlineKeyboardButton('🗣️ Feedback', url='https://t.me/InFoJosTelGroup'),
-        InlineKeyboardButton('Source 📢', url='https://t.me/InFoJosTel/115'),
+        InlineKeyboardButton('🗣️ Feedback', url='https://t.me/Yeageristbots'),
+        InlineKeyboardButton('Source 📢', url='https://github.com/Yeagerist-Music-Streamer-Bot-V3/VCMusicPlayerVr4.0'),
     ],
     [
-        InlineKeyboardButton('🤖 Bot Lists', url='https://t.me/TG_BotList/37'),
-        InlineKeyboardButton('Music 👨‍🎤', url='https://t.me/joinchat/7gSUxv6vgQE3M2Fl'),
+        InlineKeyboardButton('�Demo VC ', url='https://t.me/Animemusicarchive6?voicechat=e7cc48408aee9cc152'),
+        InlineKeyboardButton('Music 👨‍🎤', url='https://t.me/musicfanloverindia'),
     ],
     [
         InlineKeyboardButton('⚜️ Help & Information ⚜️', callback_data='help'),
