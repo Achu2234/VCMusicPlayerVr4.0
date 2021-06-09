@@ -1,6 +1,6 @@
 """
 RadioPlayerV2, Telegram Voice Chat Userbot
-Copyright (C) 2021  Zaute Km <https://telegram.dog/ZauteKm>
+Copyright (C) 2021 Achu biju <https://t.me/Yeageristbotsdev>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published by
