@@ -6,7 +6,7 @@ Telegram Voice Chat Bot (Channel &amp; Radio) Support
 
 ## Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Yeagerist-Music-Streamer-Bot-V3/VCMusicPlayerVr4.0)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TeamLinex/VCMusicPlayerVr4.0)
 
 ### Deploy to VPS
 
